@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaTube - Lectura de Primer Grado</title>
+    <link rel="stylesheet" href="css/syles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/logo.png" alt="EducaTube Logo" class="logo">
+        <input type="text" id="searchBar" placeholder="Buscar videos...">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="lectura.html">Videos de Lectura</a></li>
+            <li><a href="escritura.html">Videos de Escritura</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="video-section">
+            <h2>Videos de Lectura recomendados</h2>
+            <div class="video-container" id="lecturaContainer">
+                <div class="video" data-category="lectura">
+                    <h3>Video de Cuentos 2</h3>
+                    <video controls width="560" height="315" src="assets/videos/lectura/Descripcion/Descripciondesujetos.mp4" frameborder="0" allowfullscreen></video>
+                    <p>Disfruta de este cuento animado para aprender a leer.</p>
+                    <a href="" download=""><button class="download-btn">Descargar</button></a>
+                </div>
+                <div class="video" data-category="lectura">
+                    <h3>Video de Cuentos 2</h3>
+                    <video controls width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></video>
+                    <p>Disfruta de este cuento animado para aprender a leer.</p>
+                    <a href="" download=""><button class="download-btn">Descargar</button></a>
+                </div>
+                <div class="video" data-category="lectura">
+                    <h3>Video de Cuentos 3</h3>
+                    <video controls width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></video>
+                    <p>Disfruta de este cuento animado para aprender a leer.</p>
+                    <a href="" download=""><button class="download-btn">Descargar</button></a>
+                </div>
+            </div>
+            <a href="lectura.html" class="ver-mas">Ver más</a>
+        </section>
+        
+        <section class="video-section">
+            <h2>Videos de Escritura recomendados</h2>
+            <div class="video-container" id="escrituraContainer">
+                <div class="video" data-category="escritura">
+                    <h3>Escribo mi Nombre</h3>
+                    <video controls width="560" height="315" src="assets/videos/escritura/Nombres/Escribominombre.mp4" frameborder="0" allowfullscreen></video>
+                    <p>Aprende a escribir tu nombre con este video.</p>
+                    <a href="" download=""><button class="download-btn">Descargar</button></a>
+                </div>
+                <div class="video" data-category="escritura">
+                    <h3>Video de Escritura de Nombre Propio 2</h3>
+                    <video controls autoplay="false" width="560" height="315" src="assets/videos/" frameborder="0" allowfullscreen></video>
+                    <p>Aprende a escribir tu nombre con este video.</p>
+                    <a href="" download=""><button class="download-btn">Descargar</button></a>
+                </div>
+                <div class="video" data-category="escritura">
+                    <h3>Video de Escritura de Nombre Propio 3</h3>
+                    <video controls autoplay="false" width="560" height="315" src="assets/videos" frameborder="0" allowfullscreen></video>
+                    <p>Aprende a escribir tu nombre con este video.</p>
+                    <a href="" download=""><button class="download-btn">Descargar</button></a>
+                </div>
+            </div>
+            <a href="escritura.html" class="ver-mas">Ver más</a>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

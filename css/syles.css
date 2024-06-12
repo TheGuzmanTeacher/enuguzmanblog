@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    width: 50px;
+    margin-right: 20px;
+}
+
+header input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.video-section {
+    margin-bottom: 40px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: row; /* Cambiado de column a row */
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Para manejar el overflow en pantallas pequeñas */
+}
+
+.video {
+    flex: 1 1 30%; /* Asegura que cada video tome aproximadamente un tercio del contenedor */
+    max-width: 30%; /* Ajuste para que entren 3 videos en una fila */
+    background-color: white; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 100%;
+    max-width: 30%; /* Ajuste para que entren 3 videos en una fila */
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Transición suave para el escalado */
+}
+
+
+.video h3 {
+    margin-top: 0;
+}
+
+.video p {
+    font-size: 14px;
+    color: #555;
+}
+
+.video video {
+    width: 100%;
+    height: auto;
+}
+
+.ver-mas {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.ver-mas:hover {
+    text-decoration: underline;
+}
+
+.video:hover {
+    transform: scale(1.05); /* Escalado al pasar el cursor */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor */
+}
+
+/* Estilos para reproducir el video al pasar el cursor */
+.video iframe {
+    pointer-events: none; /* Deshabilita la interacción del ratón para permitir hover en el contenedor */
+}
+
+.video:hover video {
+    pointer-events: auto; /* Habilita la interacción del ratón al pasar el cursor */
+}
+
+@media (max-width: 1024px) {
+    .video {
+        max-width: 48%; /* Dos videos por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .video {
+        max-width: 100%; /* Un video por fila en pantallas pequeñas */
+    }
+}
+
+/* Estilos específicos para la página de lectura */
+.lectura-page {
+    background-color: #f4f4f4;
+}
+
+.lectura-page .video-section {
+    background-color: #e0f7fa; /* Color de fondo específico para la página de lectura */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.lectura-page .video-section h2 {
+    color: #019e8c; /* Color específico para los títulos en la página de lectura */
+}
+
+/* Estilos específicos para la página de escritura */
+.escritura-page {
+    background-color: #f4f4f4;
+}
+
+.escritura-page .video-section {
+    background-color: #fff3e0; /* Color de fondo específico para la página de escritura */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.escritura-page .video-section h2 {
+    color: #ff5900; /* Color específico para los títulos en la página de escritura */
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #000000; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #707070; /* Color de fondo al pasar el cursor */
+}
+
+.download-btn-2 {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #019e8c; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;   
+}
+
+.download-btn-2:hover {
+    background-color: #006055; /* Color de fondo al pasar el cursor */
+}
+
+.download-btn-3 {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff5900; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;   
+}
+
+.download-btn-3:hover {
+    background-color: #be4300; /* Color de fondo al pasar el cursor */
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+

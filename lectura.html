@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaTube - Lectura</title>
+    <link rel="stylesheet" href="css/syles.css">
+</head>
+<body class="lectura-page">
+    <header>
+        <img src="assets/images/logo.png" alt="EducaTube Logo" class="logo">
+        <input type="text" id="searchBar" placeholder="Buscar videos...">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="lectura.html">Videos de Lectura</a></li>
+            <li><a href="escritura.html">Videos de Escritura</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="video-section">
+            <h2>Lectura - Descripción de Personas, Animales, Objetos y mas...</h2>
+            <div class="video-container" id="cuentosContainer">
+                <div class="video" data-category="cuentos">
+                    <h3>Como Describir a una Persona</h3>
+                    <video controls width="560" height="315" src="assets/videos/lectura/Descripcion/Como describir a una persona.mp4" frameborder="0" allowfullscreen></video>
+                    <p>Aprende a describirte tu y a tus amigos...</p>
+                    <a href="" download=""><button class="download-btn-2">Descargar</button></a>
+                </div>
+                <div class="video" data-category="cuentos">
+                    <h3>Descripción de Objetos, Personas y Animales</h3>
+                    <video controls width="560" height="315" src="assets/videos/lectura/Descripcion/Descripciondesujetos.mp4" frameborder="0" allowfullscreen></video>
+                    <p>Mira como puedes describir tus obejetos, amigos y mascotas...</p>
+                    <a href="" download=""><button class="download-btn-2">Descargar</button></a>
+                </div>
+                <div class="video" data-category="cuentos">
+                    <h3>Los Personajes del Circo</h3>
+                    <video controls width="560" height="315" src="assets/videos/lectura/Descripcion/Los personajes del Circo.mp4" frameborder="0" allowfullscreen></video>
+                    <p>Idetifica y describe a los personajes del circo...</p>
+                    <a href="" download=""><button class="download-btn-2">Descargar</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agrega más secciones según sea necesario -->
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
